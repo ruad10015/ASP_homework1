@@ -1,0 +1,26 @@
+﻿@model List<homework1.Entities.Drink>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body style="background-color:gray">
+    <hr />
+    <h1 style="color:red">Drinks</h1>
+    <hr />
+    @foreach (var drink in Model)
+    {
+        <div>
+            <h1>ID : @drink.Id</h1>
+            <h1>Drink Name : @drink.Name</h1>
+            <h1>Drink Description : @drink.Description</h1>
+            <h1>Drink Price : @drink.Price</h1>
+
+            <hr />
+        </div>
+
+    }
+
+</body>
+</html>

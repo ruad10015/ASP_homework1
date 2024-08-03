@@ -1,0 +1,55 @@
+﻿@model homework1.Models.AllFoodsViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body style="background-color:gray">
+    <hr />
+    <h1 style="color:red">Drinks</h1>
+    <hr />
+    @foreach (var drink in Model.Drinks)
+    {
+        <div>
+            <h1>ID : @drink.Id</h1>
+            <h1>Drink Name : @drink.Name</h1>
+            <h1>Drink Description : @drink.Description</h1>
+            <h1>Drink Price : @drink.Price</h1>
+
+            <hr />
+        </div>
+
+    }
+
+    <h1 style="color:darkblue">Fast Foods</h1>
+    <hr />
+
+    @foreach (var food in Model.FastFoods)
+    {
+        <div>
+            <h1>ID : @food.Id</h1>
+            <h1>Food Name : @food.Name</h1>
+            <h1>Food Description : @food.Description</h1>
+            <h1>Food Price: @food.Price</h1>
+            <hr />
+        </div>
+
+    }
+
+    <h1 style="color:orange">Hot Meals</h1>
+    <hr />
+
+    @foreach (var meal in Model.HotMeals)
+    {
+        <div>
+            <h1>ID : @meal.Id</h1>
+            <h1>Meal Name : @meal.Name</h1>
+            <h1>Meal Description : @meal.Description</h1>
+            <h1>Meal Price: @meal.Price</h1>
+            <hr />
+        </div>
+
+    }
+</body>
+</html>
